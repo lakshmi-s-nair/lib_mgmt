@@ -7,17 +7,20 @@ To run:
 <br>
 The exsiting data:
 
-| Name    | Role      |
-|---------------------|
-| gale    | admin     |
-| anna    | member    |
-| belle   | admin     |
-| chris   | member    |
-| kate    | member    |
+| Name  | Role   |
+|-------|--------|
+| Gale  | Admin  |
+| Anna  | Member |
+| Belle | Admin  |
+| Chris | Member |
+| Kate  | Member |
+
 <br>
 All login passwords are same as the role of the person.
+
 ## Constraint
 Logout button fails to refresh the page, and hence need to be refreshed by the user.
+<br>
 Deletion of members have not been added.
 
 

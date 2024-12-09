@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Library Management</title>
+</head>
+<body class="wrapper">
+    <h1>Library Management System</h1>
+    <div class= "loginpg" id="auth-section">
+        
+        <form id="login-form">
+            <h2>Login</h2>
+            <div class ="input">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <div class="input">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+    </div>
+
+    <div class="admin" id="admin-section" style="display: none;">
+
+        <form id="register-form" style="display: none;">
+            <h2>Register</h2>
+            <label for="reg-username">Username:</label>
+            <input type="text" id="reg-username" name="username" required>
+            <label for="reg-password">Password:</label>
+            <input type="password" id="reg-password" name="password" required>
+            <label for="role">Role:</label>
+            <select id="role" name="role">
+                <option value="member">Member</option>
+                <option value="admin">Admin</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+
+        <button type="submit" id="logout">Logout</button>
+
+        
+        <br>
+
+        <form id="add-form" style="display: none;">
+            <h2>Library</h2>
+            <label for="title">Book Title:</label>
+            <input type="text" id="title" name="title" required>
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required>
+            <button type="submit">Add Book</button>
+        </form>
+
+        <br>
+
+        <form id="del-form" style="display: none;">
+            <label for="del_title">Book Title:</label>
+            <input type="text" id="del_title" name="title" required>
+            <label for="del_author">Author:</label>
+            <input type="text" id="del_author" name="del_author" required>
+            <button id ="del" type="submit">Delete Book</button>
+        </form>
+
+        <br>
+
+        <!-- <div>
+            <form id="search" style="display: none;">
+                <label for="ser_title">Book title or Author name</label>
+                <input type="text" id="ser_title" name="query" required>
+                <button type="submit">Search Book</button>
+            </form>
+        </div> -->
+
+    </div>
+
+    
+
+    <div class="container">
+        <div  class= "book" id="book-list" style="display: none;">
+            <h2>Available Books</h2>
+            <ul id="books"></ul>
+        </div>
+
+        <div class="user" id="user-list" style="display: none;">
+            <h2>Available Users</h2>
+            <ul id="users"></ul>
+        </div>
+    </div>
+    <!-- <div id="search-list" style="display: none;">
+        <h2>Search Results</h2>
+        <ul id="search-results"></ul>
+    </div> -->
+    
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

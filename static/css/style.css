@@ -1,0 +1,104 @@
+body{
+    align-items: center;
+    background-color: rgb(154, 186, 196);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+form {
+    margin-bottom: 20px;
+}
+.wrapper h1{
+    
+    color: #2B061E;
+}
+
+.loginpg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 11%;
+    margin-left: 25%;
+    width: 670px;
+    background: rgb(170, 216, 225);
+}
+.loginpg h2{
+    font-size: 42px;
+    text-align: center;
+    color: #2B061E;
+}
+.loginpg .input{
+    width:  100%;
+    height:  50px;
+    margin: 30px 0;
+
+}
+.input input{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(154, 186, 196);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #2B061E;
+    padding-left: 10px;
+}
+.input label{
+    color: #2B061E;
+}
+
+.loginpg .btn{
+    width: 100%;
+    height: 45px;
+    background: rgb(154, 186, 196);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #2B061E;
+}
+.admin label{
+    font-size: 16px;
+    color: #2B061E;
+}
+.admin input{
+    height: 30px;
+    width: 20%;
+    background: transparent;
+    outline: none;
+    border: 2px solid #2B061E;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #2B061E;
+    padding-left: 10px;
+}
+.admin button{
+    height: 30px;
+    width: 13%;
+    background: #395E66;
+    color:  rgb(154, 186, 196);
+    border-radius: 40px;
+    padding-left: 10px;
+}
+.admin select{
+    height: 30px;
+    width: 15%;
+    background: transparent;
+    outline: none;
+    border: 2px solid #2B061E;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #2B061E;
+    padding-left: 10px;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    color: #2B061E;
+    font-size: 16px;
+
+}
+
